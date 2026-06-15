@@ -24,7 +24,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - DEINE_EMAIL_HIER@gmail.com
+          - giannitifeki@gmail.com
         notify:
           success: true
           failure: true
