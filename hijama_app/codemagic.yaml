@@ -1,11 +1,12 @@
 workflows:
   android-debug:
     name: Hijama Guide — Android Debug APK
-    instance_type: mac_mini_m2
+    instance_type: linux_x2
     max_build_duration: 60
 
     environment:
       flutter: stable
+      java: 17
 
     scripts:
       - name: Flutter packages
@@ -31,11 +32,12 @@ workflows:
 
   android-release:
     name: Hijama Guide — Android Release APK
-    instance_type: mac_mini_m2
+    instance_type: linux_x2
     max_build_duration: 60
 
     environment:
       flutter: stable
+      java: 17
 
     scripts:
       - name: Flutter packages
