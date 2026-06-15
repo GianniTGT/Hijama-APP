@@ -22,7 +22,7 @@ dependencies:
   provider: ^6.1.2
 
   # Calendar & Date
-  hijri: ^2.0.1
+  hijri: ^3.0.1
   table_calendar: ^3.1.1
   intl: ^0.20.2
 
