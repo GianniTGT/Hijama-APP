@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'localization_service.dart';
+import '../services/localization_service.dart';
 
 class AppState extends ChangeNotifier {
   final LocalizationService _loc;
