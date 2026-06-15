@@ -1,0 +1,256 @@
+{
+  "app_name": "Hijama Guide",
+  "app_subtitle": "Following the Sunnah",
+  "tab_today": "Today",
+  "tab_calendar": "Calendar",
+  "tab_guide": "Guide",
+  "tab_points": "Points",
+  "tab_hadiths": "Hadiths",
+  "tab_diary": "Diary",
+  "status_recommended": "Recommended",
+  "status_sunnah": "Sunnah Day",
+  "status_allowed": "Allowed",
+  "status_avoid": "Better to avoid",
+  "status_forbidden": "Not suitable",
+  "today_hijri_date": "Islamic date",
+  "today_best_days": "Best days this month",
+  "today_next_sunnah": "Next Sunnah day",
+  "today_days_until": "Days until next recommended day",
+  "calendar_title": "Hijama Calendar",
+  "calendar_legend_sunnah": "Sunnah days (17th, 19th, 21st)",
+  "calendar_legend_recommended": "Recommended",
+  "calendar_legend_avoid": "Better to avoid",
+  "guide_before_title": "Preparation (Before)",
+  "guide_during_title": "During Hijama",
+  "guide_after_title": "Aftercare (After)",
+  "guide_before_steps": [
+    {
+      "title": "Niyyah & Bismillah",
+      "detail": "Make the intention (Niyyah) and say Bismillah. The session begins with the remembrance of Allah."
+    },
+    {
+      "title": "Fast or 3-hour gap",
+      "detail": "No heavy food at least 3 hours before hijama. Fasting is ideal."
+    },
+    {
+      "title": "Ghusl & hygiene",
+      "detail": "Body cleanliness is essential. Ghusl (full ritual bath) is recommended. Wear clean clothes."
+    },
+    {
+      "title": "Recite du'a",
+      "detail": "أَذْهِبِ الْبَأْسَ رَبَّ النَّاسِ وَاشْفِ أَنْتَ الشَّافِي\n\"Remove the ailment, O Lord of mankind, and heal — You are the Healer.\""
+    },
+    {
+      "title": "Sterilise equipment",
+      "detail": "Fully disinfect cups, lancet/scalpel, and all materials. Prefer single-use items."
+    },
+    {
+      "title": "Calm environment",
+      "detail": "Prepare a relaxed, clean, and warm environment. The person should lie in a comfortable position."
+    }
+  ],
+  "guide_during_steps": [
+    {
+      "title": "Dry cupping first",
+      "detail": "Start with 3–5 minutes of dry cupping without incisions. Prepares the skin and promotes blood flow."
+    },
+    {
+      "title": "Small incisions (Al-Hayb)",
+      "detail": "Only superficial cuts — no deeper than 1–2 mm. Only over the cupping zone, per Sunnah."
+    },
+    {
+      "title": "Reapply the cup",
+      "detail": "Place the cup immediately after incisions. Suction draws out the blood (wet cupping — Al-Hijama)."
+    },
+    {
+      "title": "Wait 3–5 minutes",
+      "detail": "Cup sits for 3–5 minutes. The person should remain still and relaxed. Dhikr or du'a is encouraged."
+    },
+    {
+      "title": "Remove cup & clean",
+      "detail": "Carefully remove the cup. The blood is dark — this is normal. Keep the wound area clean."
+    }
+  ],
+  "guide_after_steps": [
+    {
+      "title": "Clean & disinfect wounds",
+      "detail": "Clean incisions immediately with antiseptic. Apply black seed oil (Habbatus Sauda) — Sunnah."
+    },
+    {
+      "title": "Black seed oil (Habbatus Sauda)",
+      "detail": "Apply to the cupping sites. The Prophet ﷺ recommended black seed as a remedy."
+    },
+    {
+      "title": "Drink plenty of water",
+      "detail": "Drink water or herbal tea immediately after. Keep the body well hydrated."
+    },
+    {
+      "title": "Rest for 24 hours",
+      "detail": "No heavy physical work for at least 24 hours. The body needs recovery."
+    },
+    {
+      "title": "Cover cupping sites",
+      "detail": "Use sterile bandages or clean cloths. Keep clean and dry until healed."
+    },
+    {
+      "title": "No shower immediately",
+      "detail": "Wait at least 3–4 hours before showering or bathing. No hot water on the sites."
+    },
+    {
+      "title": "Light meal after 1–2 hours",
+      "detail": "Eat lightly only after a rest period. Honey and dates are recommended (Sunnah foods)."
+    }
+  ],
+  "points_sunnah_title": "Sunnah Points (recommended by the Prophet ﷺ)",
+  "points_other_title": "Further therapeutic points",
+  "points": [
+    {
+      "id": "kahil",
+      "name": "Al-Kahil",
+      "arabic": "الكاهل",
+      "description": "Between the shoulder blades — the main Sunnah point",
+      "is_sunnah": true
+    },
+    {
+      "id": "akhday_left",
+      "name": "Al-Akhda'ain (left)",
+      "arabic": "الأخدع الأيسر",
+      "description": "Left side of the neck — jugular vein",
+      "is_sunnah": true
+    },
+    {
+      "id": "akhday_right",
+      "name": "Al-Akhda'ain (right)",
+      "arabic": "الأخدع الأيمن",
+      "description": "Right side of the neck — jugular vein",
+      "is_sunnah": true
+    },
+    {
+      "id": "warik",
+      "name": "Al-Warik",
+      "arabic": "الوارك",
+      "description": "Hip / gluteal region",
+      "is_sunnah": true
+    },
+    {
+      "id": "head",
+      "name": "Top of the head",
+      "arabic": "أعلى الرأس",
+      "description": "Crown of the head — for headaches",
+      "is_sunnah": false
+    },
+    {
+      "id": "lower_back",
+      "name": "Lumbar region",
+      "arabic": "أسفل الظهر",
+      "description": "Lower back — for back pain",
+      "is_sunnah": false
+    },
+    {
+      "id": "knees",
+      "name": "Back of knees",
+      "arabic": "خلف الركبتين",
+      "description": "Popliteal area — for knee and leg complaints",
+      "is_sunnah": false
+    }
+  ],
+  "hadiths": [
+    {
+      "id": "h1",
+      "arabic": "إِنَّ أَمْثَلَ مَا تَدَاوَيْتُمْ بِهِ الْحِجَامَةُ",
+      "translation": "The best treatment you can use is hijama (cupping).",
+      "source": "Bukhari & Muslim",
+      "topic": "General"
+    },
+    {
+      "id": "h2",
+      "arabic": "خَيْرُ مَا تَدَاوَيْتُمْ بِهِ الْحِجَامَةُ",
+      "translation": "The best of what you treat yourself with is hijama.",
+      "source": "Abu Dawud, Tirmidhi",
+      "topic": "General"
+    },
+    {
+      "id": "h3",
+      "arabic": "احْتَجَمَ النَّبِيُّ ﷺ فِي الأَخْدَعَيْنِ وَالْكَاهِلِ",
+      "translation": "The Prophet ﷺ had cupping done on the jugular veins and between the shoulder blades.",
+      "source": "Tirmidhi",
+      "topic": "Points"
+    },
+    {
+      "id": "h4",
+      "arabic": "مَنِ احْتَجَمَ لِسَبْعَ عَشْرَةَ أَوْ تِسْعَ عَشْرَةَ أَوْ إِحْدَى وَعِشْرِينَ كَانَتْ شِفَاءً مِنْ كُلِّ دَاءٍ",
+      "translation": "Whoever is cupped on the 17th, 19th or 21st of the month — it will be a cure for every disease, by Allah's permission.",
+      "source": "Abu Dawud, Ibn Majah",
+      "topic": "Days"
+    },
+    {
+      "id": "h5",
+      "arabic": "احْتَجَمَ رَسُولُ اللَّهِ ﷺ وَهُوَ مُحْرِمٌ فِي رَأْسِهِ مِنْ شَقِيقَةٍ كَانَتْ بِهِ",
+      "translation": "The Messenger of Allah ﷺ, while in a state of ihram, had cupping done on his head due to a migraine.",
+      "source": "Bukhari & Muslim",
+      "topic": "Head"
+    },
+    {
+      "id": "h6",
+      "arabic": "إِنَّ فِي الْحَبَّةِ السَّوْدَاءِ شِفَاءً مِنْ كُلِّ دَاءٍ إِلَّا السَّامَ",
+      "translation": "In black seed (Habbatus Sauda) there is cure for every disease except death.",
+      "source": "Bukhari & Muslim",
+      "topic": "Aftercare"
+    },
+    {
+      "id": "h7",
+      "arabic": "الشِّفَاءُ فِي ثَلَاثَةٍ: شَرْطَةِ مِحْجَمٍ، أَوْ شَرْبَةِ عَسَلٍ، أَوْ كَيَّةٍ بِنَارٍ",
+      "translation": "Healing lies in three things: the incision of the cupping instrument, drinking honey, or cauterisation — but I forbid my Ummah from cauterisation.",
+      "source": "Bukhari",
+      "topic": "General"
+    }
+  ],
+  "diary_title": "Hijama Diary",
+  "diary_add": "Add session",
+  "diary_last": "Last session",
+  "diary_next": "Next recommended date",
+  "diary_history": "History",
+  "diary_no_entries": "No sessions recorded yet",
+  "diary_points_used": "Points used",
+  "diary_notes": "Notes",
+  "diary_date": "Date",
+  "diary_save": "Save",
+  "diary_cancel": "Cancel",
+  "diary_delete": "Delete",
+  "notification_sunnah_title": "Sunnah day tomorrow",
+  "notification_sunnah_body": "Tomorrow is the {day}th of the Islamic month — a recommended day for hijama.",
+  "notification_reminder_title": "Hijama reminder",
+  "notification_reminder_body": "Today is a good day for hijama according to the Sunnah.",
+  "settings_language": "Language",
+  "settings_notifications": "Notifications",
+  "settings_notifications_sunnah": "Sunnah day reminder",
+  "settings_notifications_custom": "Custom reminder",
+  "settings_about": "About",
+  "settings_version": "Version",
+  "error_load": "Failed to load",
+  "error_save": "Failed to save",
+  "error_auth": "Login failed",
+  "login_title": "Sign in",
+  "login_subtitle": "To sync your diary to the cloud",
+  "login_email": "Email",
+  "login_password": "Password",
+  "login_google": "Sign in with Google",
+  "login_apple": "Sign in with Apple",
+  "login_skip": "Continue without signing in",
+  "login_no_account": "Don't have an account?",
+  "login_register": "Register",
+  "status_perfect": "Perfect Sunnah day",
+  "status_perfect_sub": "Sunnah date (17/19/21) + good weekday",
+  "status_sunnah_weekend": "Sunnah day - permitted",
+  "status_sunnah_weekend_sub": "Date takes precedence over weekday",
+  "status_sunnah_wednesday": "Sunnah date - with caution",
+  "status_sunnah_wednesday_sub": "Wednesday: avoid if possible",
+  "status_recommended_sub": "Recommended weekday (Mon/Tue/Thu)",
+  "status_allowed_sub": "Permitted, no special recommendation",
+  "status_avoid_sub": "Friday/Saturday/Sunday - better to avoid",
+  "detail_perfect": "Today the {day}th Hijri date and a preferred weekday coincide. Best possible combination for Hijama per the Sunnah.",
+  "detail_weekend_override": "Although today is {weekday} (normally Makruh), the Sunnah date ({day}th Hijri) takes precedence per scholars. Hijama is permitted and blessed today.",
+  "detail_wednesday": "The {day}th Hijri is a Sunnah day, but falls on Wednesday. Some hadiths warn about Wednesdays. If possible, choose the {alt}th as an alternative.",
+  "fiqh_note_weekend": "Scholarly opinion: The specific month dates (17, 19, 21) override the Makruh nature of the weekday.",
+  "fiqh_note_wednesday": "Caution: Hadiths mention Wednesday as a day when illnesses may arise."
+}

@@ -1,0 +1,256 @@
+{
+  "app_name": "Hijama Guide",
+  "app_subtitle": "Nach der Sunnah",
+  "tab_today": "Heute",
+  "tab_calendar": "Kalender",
+  "tab_guide": "Anleitung",
+  "tab_points": "Punkte",
+  "tab_hadiths": "Hadithe",
+  "tab_diary": "Tagebuch",
+  "status_recommended": "Empfohlen",
+  "status_sunnah": "Sunnah-Tag",
+  "status_allowed": "Erlaubt",
+  "status_avoid": "Besser meiden",
+  "status_forbidden": "Nicht geeignet",
+  "today_hijri_date": "Islamisches Datum",
+  "today_best_days": "Beste Tage diesen Monat",
+  "today_next_sunnah": "Nächster Sunnah-Tag",
+  "today_days_until": "Tage bis zum nächsten empfohlenen Tag",
+  "calendar_title": "Hijama-Kalender",
+  "calendar_legend_sunnah": "Sunnah-Tage (17., 19., 21.)",
+  "calendar_legend_recommended": "Empfohlen",
+  "calendar_legend_avoid": "Besser meiden",
+  "guide_before_title": "Vorbereitung (Vorher)",
+  "guide_during_title": "Während der Hijama",
+  "guide_after_title": "Nachsorge (Danach)",
+  "guide_before_steps": [
+    {
+      "title": "Niyyah & Bismillah",
+      "detail": "Intention (Niyyah) machen und Bismillah sprechen. Die Sitzung beginnt mit der Erwähnung Allahs."
+    },
+    {
+      "title": "Nüchtern oder 3 Stunden Pause",
+      "detail": "Kein schweres Essen mindestens 3 Stunden vor der Hijama. Nüchtern ist am besten."
+    },
+    {
+      "title": "Ghusl & Hygiene",
+      "detail": "Körperhygiene ist Pflicht. Ghusl (vollständige Reinigung) wird empfohlen. Saubere Kleidung tragen."
+    },
+    {
+      "title": "Dua sprechen",
+      "detail": "أَذْهِبِ الْبَأْسَ رَبَّ النَّاسِ وَاشْفِ أَنْتَ الشَّافِي\nNimm das Leiden weg, o Herr der Menschen, und heile — du bist der Heilende."
+    },
+    {
+      "title": "Werkzeug sterilisieren",
+      "detail": "Schröpfgläser, Lanzette/Skalpell und alle Materialien vollständig desinfizieren. Einwegmaterial bevorzugen."
+    },
+    {
+      "title": "Ruhige Umgebung",
+      "detail": "Entspannte, saubere und warme Umgebung vorbereiten. Person soll in bequemer Position liegen."
+    }
+  ],
+  "guide_during_steps": [
+    {
+      "title": "Trockenschröpfen (Dry Cupping)",
+      "detail": "Zunächst 3–5 Minuten Trockenschröpfen ohne Einschnitte. Bereitet die Haut vor und fördert die Durchblutung."
+    },
+    {
+      "title": "Kleine Einschnitte (Al-Hayb)",
+      "detail": "Nur oberflächliche Einschnitte — nicht tiefer als 1–2 mm. Nur über die Schröpfzone, nach Sunnah."
+    },
+    {
+      "title": "Schröpfglas wieder aufsetzen",
+      "detail": "Glas sofort nach den Einschnitten aufsetzen. Unterdruck zieht das Blut heraus (Nasses Schröpfen — Al-Hijama)."
+    },
+    {
+      "title": "3–5 Minuten warten",
+      "detail": "Glas sitzt 3–5 Minuten. Person soll still und entspannt liegen. Dhikr oder Dua sprechen."
+    },
+    {
+      "title": "Glas abnehmen & reinigen",
+      "detail": "Schröpfglas vorsichtig abnehmen. Blut ist dunkel — das ist normal. Wundbereich sauber halten."
+    }
+  ],
+  "guide_after_steps": [
+    {
+      "title": "Wunden reinigen & desinfizieren",
+      "detail": "Einschnitte sofort mit Antiseptikum reinigen. Schwarzkümmelöl (Habbatus Sauda) auftragen — Sunnah."
+    },
+    {
+      "title": "Schwarzkümmelöl (Habbatus Sauda)",
+      "detail": "Auf die Schröpfstellen auftragen. Der Prophet ﷺ empfahl Schwarzkümmel als Heilmittel."
+    },
+    {
+      "title": "Ausreichend Wasser trinken",
+      "detail": "Sofort danach viel Wasser oder Kräutertee trinken. Den Körper gut hydriert halten."
+    },
+    {
+      "title": "Ruhen — 24 Stunden",
+      "detail": "Keine schwere körperliche Arbeit für mindestens 24 Stunden. Der Körper braucht Erholung."
+    },
+    {
+      "title": "Schröpfstellen abdecken",
+      "detail": "Sterile Verbände oder saubere Tücher über die Stellen. Sauber und trocken halten bis geheilt."
+    },
+    {
+      "title": "Keine Dusche sofort danach",
+      "detail": "Mindestens 3–4 Stunden warten vor dem Duschen oder Baden. Kein heißes Wasser auf die Stellen."
+    },
+    {
+      "title": "Leichte Mahlzeit nach 1–2 Stunden",
+      "detail": "Erst nach einer Ruhephase leicht essen. Honig und Datteln sind empfohlen (Sunnah-Lebensmittel)."
+    }
+  ],
+  "points_sunnah_title": "Sunnah-Punkte (vom Propheten ﷺ empfohlen)",
+  "points_other_title": "Weitere therapeutische Punkte",
+  "points": [
+    {
+      "id": "kahil",
+      "name": "Al-Kahil",
+      "arabic": "الكاهل",
+      "description": "Zwischen den Schulterblättern — der Hauptpunkt nach der Sunnah",
+      "is_sunnah": true
+    },
+    {
+      "id": "akhday_left",
+      "name": "Al-Akhda'ain (links)",
+      "arabic": "الأخدع الأيسر",
+      "description": "Linke Halsseite — Jugularvene",
+      "is_sunnah": true
+    },
+    {
+      "id": "akhday_right",
+      "name": "Al-Akhda'ain (rechts)",
+      "arabic": "الأخدع الأيمن",
+      "description": "Rechte Halsseite — Jugularvene",
+      "is_sunnah": true
+    },
+    {
+      "id": "warik",
+      "name": "Al-Warik",
+      "arabic": "الوارك",
+      "description": "Hüft-/Gesäßbereich",
+      "is_sunnah": true
+    },
+    {
+      "id": "head",
+      "name": "Oberer Kopf",
+      "arabic": "أعلى الرأس",
+      "description": "Oberseite des Kopfes — bei Kopfschmerzen",
+      "is_sunnah": false
+    },
+    {
+      "id": "lower_back",
+      "name": "Lumbalbereich",
+      "arabic": "أسفل الظهر",
+      "description": "Unterer Rücken — bei Rückenschmerzen",
+      "is_sunnah": false
+    },
+    {
+      "id": "knees",
+      "name": "Rückseite der Knie",
+      "arabic": "خلف الركبتين",
+      "description": "Kniekehlen — bei Knie- und Beinbeschwerden",
+      "is_sunnah": false
+    }
+  ],
+  "hadiths": [
+    {
+      "id": "h1",
+      "arabic": "إِنَّ أَمْثَلَ مَا تَدَاوَيْتُمْ بِهِ الْحِجَامَةُ",
+      "translation": "Die beste eurer Heilmethoden ist das Schröpfen (Hijama).",
+      "source": "Bukhari & Muslim",
+      "topic": "Allgemein"
+    },
+    {
+      "id": "h2",
+      "arabic": "خَيْرُ مَا تَدَاوَيْتُمْ بِهِ الْحِجَامَةُ",
+      "translation": "Das Beste, womit ihr euch behandelt, ist die Hijama.",
+      "source": "Abu Dawud, Tirmidhi",
+      "topic": "Allgemein"
+    },
+    {
+      "id": "h3",
+      "arabic": "احْتَجَمَ النَّبِيُّ ﷺ فِي الأَخْدَعَيْنِ وَالْكَاهِلِ",
+      "translation": "Der Prophet ﷺ ließ sich an den Jugularvenen und zwischen den Schulterblättern schröpfen.",
+      "source": "Tirmidhi",
+      "topic": "Punkte"
+    },
+    {
+      "id": "h4",
+      "arabic": "مَنِ احْتَجَمَ لِسَبْعَ عَشْرَةَ أَوْ تِسْعَ عَشْرَةَ أَوْ إِحْدَى وَعِشْرِينَ كَانَتْ شِفَاءً مِنْ كُلِّ دَاءٍ",
+      "translation": "Wer am 17., 19. oder 21. des Monats Schröpfen lässt, für den ist es Heilung von jeder Krankheit — mit Allahs Erlaubnis.",
+      "source": "Abu Dawud, Ibn Majah",
+      "topic": "Tage"
+    },
+    {
+      "id": "h5",
+      "arabic": "احْتَجَمَ رَسُولُ اللَّهِ ﷺ وَهُوَ مُحْرِمٌ فِي رَأْسِهِ مِنْ شَقِيقَةٍ كَانَتْ بِهِ",
+      "translation": "Der Gesandte Allahs ﷺ ließ sich, während er im Ihram war, am Kopf wegen eines Migräneanfalls schröpfen.",
+      "source": "Bukhari & Muslim",
+      "topic": "Kopf"
+    },
+    {
+      "id": "h6",
+      "arabic": "إِنَّ فِي الْحَبَّةِ السَّوْدَاءِ شِفَاءً مِنْ كُلِّ دَاءٍ إِلَّا السَّامَ",
+      "translation": "Im schwarzen Kümmel (Habbatus Sauda) ist Heilung für jede Krankheit außer dem Tod.",
+      "source": "Bukhari & Muslim",
+      "topic": "Nachsorge"
+    },
+    {
+      "id": "h7",
+      "arabic": "الشِّفَاءُ فِي ثَلَاثَةٍ: شَرْطَةِ مِحْجَمٍ، أَوْ شَرْبَةِ عَسَلٍ، أَوْ كَيَّةٍ بِنَارٍ",
+      "translation": "Die Heilung liegt in drei Dingen: im Schröpfschnitt, im Trinken von Honig, oder im Ausbrennen mit Feuer — doch ich verbiete meiner Gemeinde das Ausbrennen.",
+      "source": "Bukhari",
+      "topic": "Allgemein"
+    }
+  ],
+  "diary_title": "Hijama-Tagebuch",
+  "diary_add": "Sitzung eintragen",
+  "diary_last": "Letzte Sitzung",
+  "diary_next": "Nächster empfohlener Termin",
+  "diary_history": "Verlauf",
+  "diary_no_entries": "Noch keine Sitzungen eingetragen",
+  "diary_points_used": "Verwendete Punkte",
+  "diary_notes": "Notizen",
+  "diary_date": "Datum",
+  "diary_save": "Speichern",
+  "diary_cancel": "Abbrechen",
+  "diary_delete": "Löschen",
+  "notification_sunnah_title": "Sunnah-Tag morgen",
+  "notification_sunnah_body": "Morgen ist der {day}. des islamischen Monats — ein empfohlener Tag für Hijama.",
+  "notification_reminder_title": "Hijama-Erinnerung",
+  "notification_reminder_body": "Heute ist ein guter Tag für Hijama nach der Sunnah.",
+  "settings_language": "Sprache",
+  "settings_notifications": "Benachrichtigungen",
+  "settings_notifications_sunnah": "Sunnah-Tage Erinnerung",
+  "settings_notifications_custom": "Eigene Erinnerung",
+  "settings_about": "Über die App",
+  "settings_version": "Version",
+  "error_load": "Fehler beim Laden",
+  "error_save": "Fehler beim Speichern",
+  "error_auth": "Anmeldung fehlgeschlagen",
+  "login_title": "Anmelden",
+  "login_subtitle": "Für die Cloud-Synchronisation deines Tagebuchs",
+  "login_email": "E-Mail",
+  "login_password": "Passwort",
+  "login_google": "Mit Google anmelden",
+  "login_apple": "Mit Apple anmelden",
+  "login_skip": "Ohne Anmeldung fortfahren",
+  "login_no_account": "Noch kein Konto?",
+  "login_register": "Registrieren",
+  "status_perfect": "Perfekter Sunnah-Tag",
+  "status_perfect_sub": "Sunnah-Datum (17/19/21) + guter Wochentag",
+  "status_sunnah_weekend": "Sunnah-Tag – erlaubt",
+  "status_sunnah_weekend_sub": "Datum hat Vorrang ueber Wochentag",
+  "status_sunnah_wednesday": "Sunnah-Datum – mit Vorsicht",
+  "status_sunnah_wednesday_sub": "Mittwoch: nach Moeglichkeit ausweichen",
+  "status_recommended_sub": "Empfohlener Wochentag (Mo/Di/Do)",
+  "status_allowed_sub": "Erlaubt, keine besondere Empfehlung",
+  "status_avoid_sub": "Freitag/Samstag/Sonntag – besser meiden",
+  "detail_perfect": "Heute treffen der {day}. Hidschri-Tag und ein bevorzugter Wochentag zusammen. Beste Kombination fuer Hijama nach der Sunnah.",
+  "detail_weekend_override": "Obwohl heute {weekday} (normalerweise Makruh), hat das Sunnah-Datum ({day}. Hidschri) nach Meinung der Gelehrten Vorrang. Hijama ist heute erlaubt und segensreich.",
+  "detail_wednesday": "Der {day}. Hidschri ist ein Sunnah-Tag, faellt aber auf Mittwoch. Einige Hadithe warnen vor dem Mittwoch. Wenn moeglich, waehle den {alt}. als Alternative.",
+  "fiqh_note_weekend": "Meinung der Gelehrten: Die spezifischen Monatsdaten (17, 19, 21) heben die Makruh-Eigenschaft des Wochentags auf.",
+  "fiqh_note_wednesday": "Vorsicht: Hadithe erwaehnen den Mittwoch als Tag, an dem Krankheiten ausbrechen koennen."
+}

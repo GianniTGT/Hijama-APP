@@ -1,0 +1,256 @@
+{
+  "app_name": "Udhëzues Hixhame",
+  "app_subtitle": "Sipas Sunnetit",
+  "tab_today": "Sot",
+  "tab_calendar": "Kalendar",
+  "tab_guide": "Udhëzim",
+  "tab_points": "Pikat",
+  "tab_hadiths": "Hadithe",
+  "tab_diary": "Ditar",
+  "status_recommended": "Rekomanduar",
+  "status_sunnah": "Ditë Sunneti",
+  "status_allowed": "Lejohet",
+  "status_avoid": "Më mirë shmango",
+  "status_forbidden": "Jo e përshtatshme",
+  "today_hijri_date": "Data islame",
+  "today_best_days": "Ditët më të mira këtë muaj",
+  "today_next_sunnah": "Dita e ardhshme e Sunnetit",
+  "today_days_until": "Ditë deri në datën e radhës të rekomanduar",
+  "calendar_title": "Kalendari i Hixhames",
+  "calendar_legend_sunnah": "Ditët e Sunnetit (17, 19, 21)",
+  "calendar_legend_recommended": "Rekomanduar",
+  "calendar_legend_avoid": "Më mirë shmango",
+  "guide_before_title": "Përgatitja (Para)",
+  "guide_during_title": "Gjatë Hixhames",
+  "guide_after_title": "Kujdesi pas (Pas)",
+  "guide_before_steps": [
+    {
+      "title": "Nijjeti dhe Bismilahu",
+      "detail": "Bëj nijjetin (qëllimin) dhe thuaj Bismilahu. Seanca fillon me përmendjen e Allahut."
+    },
+    {
+      "title": "Agjërim ose 3 orë pauzë",
+      "detail": "Asnjë ushqim të rëndë të paktën 3 orë para hixhames. Agjërimë është ideale."
+    },
+    {
+      "title": "Gusl dhe higjienë",
+      "detail": "Pastërtia trupore është e domosdoshme. Gusli (larja e plotë) rekomandohet. Vish rroba të pastra."
+    },
+    {
+      "title": "Lexo duanë",
+      "detail": "أَذْهِبِ الْبَأْسَ رَبَّ النَّاسِ وَاشْفِ أَنْتَ الشَّافِي\n\"Hiqe dhimbjen, o Zot i njerëzve, dhe shëro — Ti je Shëruesi.\""
+    },
+    {
+      "title": "Sterilizohu mjetet",
+      "detail": "Dezinfektoji plotësisht kupat, lancetën/skalpelin dhe të gjitha materialet. Prefero materiale njëpërdorimshe."
+    },
+    {
+      "title": "Mjedis i qetë",
+      "detail": "Përgatit një mjedis të relaksuar, të pastër dhe të ngrohtë. Personi duhet të shtrihet rehat."
+    }
+  ],
+  "guide_during_steps": [
+    {
+      "title": "Hixhame e thatë fillimisht",
+      "detail": "Fillo me 3–5 minuta hixhame të thatë pa prerje. Përgatit lëkurën dhe promovon qarkullimin e gjakut."
+    },
+    {
+      "title": "Prerje të vogla (Al-Hayb)",
+      "detail": "Vetëm prerje sipërfaqësore — jo më thellë se 1–2 mm. Vetëm mbi zonën e kupit, sipas Sunnetit."
+    },
+    {
+      "title": "Rivendos kupin",
+      "detail": "Vendos kupin menjëherë pas prerjeve. Thithja nxjerr gjakun (hixhame e lagësht — Al-Hixhame)."
+    },
+    {
+      "title": "Prit 3–5 minuta",
+      "detail": "Kupi qëndron 3–5 minuta. Personi duhet të qëndrojë i palëvizshëm dhe i relaksuar. Dhikri ose dua inkurajohet."
+    },
+    {
+      "title": "Hiq kupin dhe pastro",
+      "detail": "Hiqe kupin me kujdes. Gjaku është i errët — kjo është normale. Mbaje zonën e plagës të pastër."
+    }
+  ],
+  "guide_after_steps": [
+    {
+      "title": "Pastro dhe dezinfekto plagët",
+      "detail": "Pastro prerjet menjëherë me antiseptik. Apliko vaj fara e zezë (Habetus Sauda) — Sunnet."
+    },
+    {
+      "title": "Vaj fara e zezë (Habetus Sauda)",
+      "detail": "Apliko mbi vendet e hixhames. Profeti ﷺ rekomandoi farat e zeza si ilaç."
+    },
+    {
+      "title": "Pi shumë ujë",
+      "detail": "Pi ujë ose çaj bimësh menjëherë pas. Mbaje trupin të hidratuar mirë."
+    },
+    {
+      "title": "Pushimi për 24 orë",
+      "detail": "Asnjë punë fizike e rëndë për të paktën 24 orë. Trupi ka nevojë për rikuperim."
+    },
+    {
+      "title": "Mbulo vendet e hixhames",
+      "detail": "Përdor fashë sterile ose copa të pastra. Mbaji të pastra dhe të thata deri sa shërohen."
+    },
+    {
+      "title": "Mos bëj dush menjëherë",
+      "detail": "Prit të paktën 3–4 orë para se të bësh dush ose banjë. Asnjë ujë të nxehtë mbi vendet."
+    },
+    {
+      "title": "Ushqim i lehtë pas 1–2 orësh",
+      "detail": "Ha lehtë vetëm pas një periudhe pushimi. Mjalta dhe hurmat rekomandohen (ushqime të Sunnetit)."
+    }
+  ],
+  "points_sunnah_title": "Pikat e Sunnetit (të rekomanduara nga Profeti ﷺ)",
+  "points_other_title": "Pika të tjera terapeutike",
+  "points": [
+    {
+      "id": "kahil",
+      "name": "Al-Kahil",
+      "arabic": "الكاهل",
+      "description": "Mes shpatullave — pika kryesore e Sunnetit",
+      "is_sunnah": true
+    },
+    {
+      "id": "akhday_left",
+      "name": "Al-Akhda'ain (majtas)",
+      "arabic": "الأخدع الأيسر",
+      "description": "Ana e majtë e qafës — vena jugulare",
+      "is_sunnah": true
+    },
+    {
+      "id": "akhday_right",
+      "name": "Al-Akhda'ain (djathtas)",
+      "arabic": "الأخدع الأيمن",
+      "description": "Ana e djathtë e qafës — vena jugulare",
+      "is_sunnah": true
+    },
+    {
+      "id": "warik",
+      "name": "Al-Warik",
+      "arabic": "الوارك",
+      "description": "Zona e ijeve/gluteale",
+      "is_sunnah": true
+    },
+    {
+      "id": "head",
+      "name": "Maja e kokës",
+      "arabic": "أعلى الرأس",
+      "description": "Kurora e kokës — për dhimbje koke",
+      "is_sunnah": false
+    },
+    {
+      "id": "lower_back",
+      "name": "Zona lumbale",
+      "arabic": "أسفل الظهر",
+      "description": "Shpina e poshtme — për dhimbje shpine",
+      "is_sunnah": false
+    },
+    {
+      "id": "knees",
+      "name": "Prapa gjunjve",
+      "arabic": "خلف الركبتين",
+      "description": "Zona e gropës së gjurit — për probleme gjuri dhe këmbësh",
+      "is_sunnah": false
+    }
+  ],
+  "hadiths": [
+    {
+      "id": "h1",
+      "arabic": "إِنَّ أَمْثَلَ مَا تَدَاوَيْتُمْ بِهِ الْحِجَامَةُ",
+      "translation": "Trajtimet tuaja më të mira janë hixhameja (gjakmarrja).",
+      "source": "Buhariu dhe Muslimi",
+      "topic": "E Përgjithshme"
+    },
+    {
+      "id": "h2",
+      "arabic": "خَيْرُ مَا تَدَاوَيْتُمْ بِهِ الْحِجَامَةُ",
+      "translation": "Më e mira me të cilën kuroni veten është hixhameja.",
+      "source": "Ebu Davudi, Tirmidhiu",
+      "topic": "E Përgjithshme"
+    },
+    {
+      "id": "h3",
+      "arabic": "احْتَجَمَ النَّبِيُّ ﷺ فِي الأَخْدَعَيْنِ وَالْكَاهِلِ",
+      "translation": "Profeti ﷺ bëri hixhame në venat jugulare dhe mes shpatullave.",
+      "source": "Tirmidhiu",
+      "topic": "Pikat"
+    },
+    {
+      "id": "h4",
+      "arabic": "مَنِ احْتَجَمَ لِسَبْعَ عَشْرَةَ أَوْ تِسْعَ عَشْرَةَ أَوْ إِحْدَى وَعِشْرِينَ كَانَتْ شِفَاءً مِنْ كُلِّ دَاءٍ",
+      "translation": "Kush bën hixhame ditën e 17-të, 19-të ose 21-të të muajit — do të jetë shërim nga çdo sëmundje, me lejen e Allahut.",
+      "source": "Ebu Davudi, Ibn Maxheh",
+      "topic": "Ditët"
+    },
+    {
+      "id": "h5",
+      "arabic": "احْتَجَمَ رَسُولُ اللَّهِ ﷺ وَهُوَ مُحْرِمٌ فِي رَأْسِهِ مِنْ شَقِيقَةٍ كَانَتْ بِهِ",
+      "translation": "I Dërguari i Allahut ﷺ, ndërkohë që ishte në gjendje ihrami, bëri hixhame në kokë për shkak të migrenës.",
+      "source": "Buhariu dhe Muslimi",
+      "topic": "Koka"
+    },
+    {
+      "id": "h6",
+      "arabic": "إِنَّ فِي الْحَبَّةِ السَّوْدَاءِ شِفَاءً مِنْ كُلِّ دَاءٍ إِلَّا السَّامَ",
+      "translation": "Në farat e zeza (Habetus Sauda) ka shërim nga çdo sëmundje përveç vdekjes.",
+      "source": "Buhariu dhe Muslimi",
+      "topic": "Kujdesi Pas"
+    },
+    {
+      "id": "h7",
+      "arabic": "الشِّفَاءُ فِي ثَلَاثَةٍ: شَرْطَةِ مِحْجَمٍ، أَوْ شَرْبَةِ عَسَلٍ، أَوْ كَيَّةٍ بِنَارٍ",
+      "translation": "Shërimi gjendet në tre gjëra: prerjen e instrumentit të gjakmarrjes, pirjen e mjaltës, ose djegien — por unë e ndaloj Ummetin tim nga djegja.",
+      "source": "Buhariu",
+      "topic": "E Përgjithshme"
+    }
+  ],
+  "diary_title": "Ditari i Hixhames",
+  "diary_add": "Shto seancë",
+  "diary_last": "Seanca e fundit",
+  "diary_next": "Data e ardhshme e rekomanduar",
+  "diary_history": "Historia",
+  "diary_no_entries": "Ende nuk ka seanca të regjistruara",
+  "diary_points_used": "Pikat e përdorura",
+  "diary_notes": "Shënime",
+  "diary_date": "Data",
+  "diary_save": "Ruaj",
+  "diary_cancel": "Anulo",
+  "diary_delete": "Fshij",
+  "notification_sunnah_title": "Ditë Sunneti nesër",
+  "notification_sunnah_body": "Nesër është dita e {day}-të e muajit islamik — ditë e rekomanduar për hixhame.",
+  "notification_reminder_title": "Kujtesë Hixhame",
+  "notification_reminder_body": "Sot është ditë e mirë për hixhame sipas Sunnetit.",
+  "settings_language": "Gjuha",
+  "settings_notifications": "Njoftime",
+  "settings_notifications_sunnah": "Kujtesë ditë Sunneti",
+  "settings_notifications_custom": "Kujtesë e personalizuar",
+  "settings_about": "Rreth aplikacionit",
+  "settings_version": "Versioni",
+  "error_load": "Gabim gjatë ngarkimit",
+  "error_save": "Gabim gjatë ruajtjes",
+  "error_auth": "Hyrja dështoi",
+  "login_title": "Hyr",
+  "login_subtitle": "Për sinkronizimin e ditarit në cloud",
+  "login_email": "Email",
+  "login_password": "Fjalëkalim",
+  "login_google": "Hyr me Google",
+  "login_apple": "Hyr me Apple",
+  "login_skip": "Vazhdo pa hyrë",
+  "login_no_account": "Nuk ke llogari?",
+  "login_register": "Regjistrohu",
+  "status_perfect": "Dite e persosmur Sunneti",
+  "status_perfect_sub": "Data Sunneti (17/19/21) + dite e mire jave",
+  "status_sunnah_weekend": "Dite Sunneti - e lejuar",
+  "status_sunnah_weekend_sub": "Data ka perparesi ndaj dites",
+  "status_sunnah_wednesday": "Date Sunneti - me kujdes",
+  "status_sunnah_wednesday_sub": "E merkure: evito nese eshte e mundur",
+  "status_recommended_sub": "Dite e rekomanduar (He/Ma/En)",
+  "status_allowed_sub": "E lejuar, pa rekomandim te vecante",
+  "status_avoid_sub": "E premte/E shtune/E diel - me mire evito",
+  "detail_perfect": "Sot bashkohen dita hixhri {day} dhe nje dite e preferuar. Kombinimi me i mire per hixhame sipas Sunnetit.",
+  "detail_weekend_override": "Edhe pse sot eshte {weekday} (zakonisht Mekruh), data Sunneti ({day} hixhri) ka perparesi sipas dijetareve. Hixhameja eshte e lejuar dhe e bekuar sot.",
+  "detail_wednesday": "Dita {day} hixhri eshte dite Sunneti, por bie ne te merkure. Disa hadithe paralajmerojne per te merkuren. Nese eshte e mundur, zgjidh diten {alt}.",
+  "fiqh_note_weekend": "Mendimi i dijetareve: Datat specifike (17, 19, 21) anulojne naturen Mekruh te dites.",
+  "fiqh_note_wednesday": "Kujdes: Hadithet permend te merkuren si dite kur mund te shperthejne semuundjet."
+}

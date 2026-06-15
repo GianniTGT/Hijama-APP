@@ -1,0 +1,57 @@
+name: hijama_guide
+description: Hijama / Cupping Guide nach der Sunnah — islamischer Kalender & Tagebuch
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Hijri calendar (Islamic calendar conversion)
+  hijri: ^2.0.0
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.15.0
+  firebase_messaging: ^14.7.10
+
+  # Local storage (language preference, local cache)
+  shared_preferences: ^2.2.2
+
+  # Notifications (Sunnah day reminders)
+  flutter_local_notifications: ^16.3.0
+  timezone: ^0.9.2
+
+  # State management
+  provider: ^6.1.1
+
+  # UI extras
+  intl: ^0.19.0
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true  # enables flutter_localizations
+
+  assets:
+    - assets/l10n/de.json
+    - assets/l10n/en.json
+    - assets/l10n/sq.json
+    - assets/l10n/ar.json
+    - assets/images/body_points.png
+
+  fonts:
+    - family: Scheherazade
+      fonts:
+        - asset: assets/fonts/ScheherazadeNew-Regular.ttf
