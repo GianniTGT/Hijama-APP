@@ -26,29 +26,29 @@ class DefaultFirebaseOptions {
   // ── REPLACE these placeholders with your real Firebase project values ──
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'YOUR_ANDROID_API_KEY',
-    appId: '1:000000000000:android:0000000000000000',
-    messagingSenderId: '000000000000',
-    projectId: 'hijama-guide',
-    storageBucket: 'hijama-guide.appspot.com',
+    apiKey: 'AIzaSyCeYs77JjflixrC5IzTTvpJKVf9JT-pfGA',
+    appId: '1:1031294541673:android:5edb7d30544185e61f67f8',
+    messagingSenderId: '1031294541673',
+    projectId: 'hijama-ca2d1',
+    storageBucket: 'hijama-ca2d1.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'YOUR_IOS_API_KEY',
-    appId: '1:000000000000:ios:0000000000000000',
-    messagingSenderId: '000000000000',
-    projectId: 'hijama-guide',
-    storageBucket: 'hijama-guide.appspot.com',
+    appId: '1:1031294541673:ios:0000000000000000',
+    messagingSenderId: '1031294541673',
+    projectId: 'hijama-ca2d1',
+    storageBucket: 'hijama-ca2d1.firebasestorage.app',
     iosClientId: 'YOUR_IOS_CLIENT_ID',
     iosBundleId: 'com.kani.hijamaapp',
   );
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'YOUR_WEB_API_KEY',
-    appId: '1:000000000000:web:0000000000000000',
-    messagingSenderId: '000000000000',
-    projectId: 'hijama-guide',
-    storageBucket: 'hijama-guide.appspot.com',
-    authDomain: 'hijama-guide.firebaseapp.com',
+    appId: '1:1031294541673:web:0000000000000000',
+    messagingSenderId: '1031294541673',
+    projectId: 'hijama-ca2d1',
+    storageBucket: 'hijama-ca2d1.firebasestorage.app',
+    authDomain: 'hijama-ca2d1.firebaseapp.com',
   );
 }
