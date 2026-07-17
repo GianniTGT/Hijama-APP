@@ -21,14 +21,23 @@ class _DiaryScreenState extends State<DiaryScreen> {
   }
 
   Future<void> _loadNextDate() async {
-    final d = await _service.getNextRecommendedDate();
-    if (mounted) setState(() => _nextRecommended = d);
+    try {
+      final d = await _service.getNextRecommendedDate();
+      if (mounted) setState(() => _nextRecommended = d);
+    } catch (_) {
+      // Firebase unavailable (not initialized / offline) — banner stays hidden.
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     final t = localization;
-    final user = FirebaseAuth.instance.currentUser;
+    User? user;
+    try {
+      user = FirebaseAuth.instance.currentUser;
+    } catch (_) {
+      user = null; // Firebase unavailable — fall through to logged-out state
+    }
 
     return Scaffold(
       appBar: AppBar(title: Text(t.t('diary_title'))),

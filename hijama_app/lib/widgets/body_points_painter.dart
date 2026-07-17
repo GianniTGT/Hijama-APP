@@ -198,7 +198,7 @@ class BodyPointsPainter extends CustomPainter {
       old.selectedId != selectedId || old.points != points;
 
   /// Returns the point id at the tapped position, or null.
-  static String? hitTest(Offset tap, Size size, List<CuppingPoint> points) {
+  static String? hitTestPoint(Offset tap, Size size, List<CuppingPoint> points) {
     for (final point in points) {
       final pos = _pointPositions[point.id];
       if (pos == null) continue;
