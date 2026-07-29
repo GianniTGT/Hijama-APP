@@ -180,7 +180,7 @@ class HijriCalendarService {
   /// Alle Tage eines bestimmten Hijri-Jahres/Monats.
   static List<HijamaDayInfo> getDaysForHijriMonth(int hYear, int hMonth) {
     final List<HijamaDayInfo> days = [];
-    final daysInMonth = HijriCalendar.getDaysInMonth(hYear, hMonth);
+    final daysInMonth = HijriCalendar().getDaysInMonth(hYear, hMonth);
 
     for (int day = 1; day <= daysInMonth; day++) {
       final hijri = HijriCalendar()

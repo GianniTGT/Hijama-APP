@@ -69,6 +69,8 @@ class NotificationService {
           scheduledDate,
           _buildDetails(importance: _importanceFor(day.status)),
           androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+          uiLocalNotificationDateInterpretation:
+              UILocalNotificationDateInterpretation.absoluteTime,
         );
       }
     }
