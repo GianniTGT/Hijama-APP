@@ -13,27 +13,27 @@ dependencies:
     sdk: flutter
 
   # Hijri calendar (Islamic calendar conversion)
-  hijri: ^2.0.0
+  hijri: ^3.0.1
 
   # Firebase
-  firebase_core: ^2.24.2
-  firebase_auth: ^4.16.0
-  cloud_firestore: ^4.15.0
-  firebase_messaging: ^14.7.10
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+  firebase_messaging: ^15.1.3
 
   # Local storage (language preference, local cache)
-  shared_preferences: ^2.2.2
+  shared_preferences: ^2.3.2
 
   # Notifications (Sunnah day reminders)
-  flutter_local_notifications: ^16.3.0
-  timezone: ^0.9.2
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
 
   # State management
-  provider: ^6.1.1
+  provider: ^6.1.2
 
   # UI extras
-  intl: ^0.19.0
-  google_fonts: ^6.1.0
+  intl: ^0.20.2
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -49,9 +49,9 @@ flutter:
     - assets/l10n/en.json
     - assets/l10n/sq.json
     - assets/l10n/ar.json
-    - assets/images/body_points.png
 
-  fonts:
-    - family: Scheherazade
-      fonts:
-        - asset: assets/fonts/ScheherazadeNew-Regular.ttf
+  # fonts:
+  #   - family: Scheherazade
+  #     fonts:
+  #       - asset: assets/fonts/ScheherazadeNew-Regular.ttf
+  #         (Download from https://fonts.google.com/specimen/Scheherazade+New)

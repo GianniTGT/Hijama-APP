@@ -1,5 +1,6 @@
 // widgets/hadith_card.dart
 import 'package:flutter/material.dart';
+import '../services/hijri_calendar_service.dart';
 import '../services/localization_service.dart';
 import '../utils/app_theme.dart';
 
@@ -83,8 +84,6 @@ class DayStatusBadge extends StatelessWidget {
 }
 
 // widgets/upcoming_days_strip.dart
-import '../services/hijri_calendar_service.dart';
-
 class UpcomingDaysStrip extends StatelessWidget {
   const UpcomingDaysStrip({super.key, required this.days});
   final List<HijamaDayInfo> days;
@@ -99,7 +98,7 @@ class UpcomingDaysStrip extends StatelessWidget {
         itemBuilder: (ctx, i) {
           final day = days[i];
           final isToday = day.gregorianDate.day == DateTime.now().day;
-          final color = day.isSunnahDay
+          final color = day.isSunnahDate
               ? const Color(0xFF1A4A2E)
               : const Color(0xFFC4922A);
 

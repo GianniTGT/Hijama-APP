@@ -3,9 +3,6 @@ import '../services/hijri_calendar_service.dart';
 import '../services/localization_service.dart';
 import '../utils/app_theme.dart';
 import '../widgets/hadith_card.dart';
-import '../widgets/day_status_badge.dart';
-import '../widgets/upcoming_days_strip.dart';
-import '../widgets/rule_row.dart';
 
 class TodayScreen extends StatelessWidget {
   const TodayScreen({super.key});
@@ -135,7 +132,7 @@ class TodayScreen extends StatelessWidget {
 
   String _rule3(LocalizationService t) {
     final hadiths = t.getHadiths();
-    return hadiths.length > 3 ? hadiths[3]['topic'] ?? '' : '';
+    return hadiths.length > 3 ? hadiths[3].topic : '';
   }
 
   String _rule4(LocalizationService t) {

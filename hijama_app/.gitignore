@@ -30,3 +30,10 @@ ios/Pods/
 # android/app/google-services.json
 # ios/Runner/GoogleService-Info.plist
 # lib/firebase_options.dart
+
+# IDE
+.idea/
+*.iml
+
+# Generated
+android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java

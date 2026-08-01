@@ -105,7 +105,7 @@ class _BodyDiagramTab extends StatelessWidget {
                   );
                   return GestureDetector(
                     onTapUp: (details) {
-                      final tappedId = BodyPointsPainter.hitTest(
+                      final tappedId = BodyPointsPainter.hitTestPoint(
                         details.localPosition,
                         size,
                         points,

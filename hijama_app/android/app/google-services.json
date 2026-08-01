@@ -1,15 +1,13 @@
 {
-  "_comment": "PLACEHOLDER — replace with your real google-services.json from Firebase Console.",
-  "_comment2": "Run: flutterfire configure  OR  download from https://console.firebase.google.com",
   "project_info": {
-    "project_number": "000000000000",
-    "project_id": "hijama-guide",
-    "storage_bucket": "hijama-guide.appspot.com"
+    "project_number": "1031294541673",
+    "project_id": "hijama-ca2d1",
+    "storage_bucket": "hijama-ca2d1.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:000000000000:android:0000000000000000",
+        "mobilesdk_app_id": "1:1031294541673:android:5edb7d30544185e61f67f8",
         "android_client_info": {
           "package_name": "com.kani.hijamaapp"
         }
@@ -17,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "YOUR_ANDROID_API_KEY"
+          "current_key": "AIzaSyCeYs77JjflixrC5IzTTvpJKVf9JT-pfGA"
         }
       ],
       "services": {

@@ -57,8 +57,10 @@ class DiaryEntry {
 }
 
 class DiaryService {
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  // Lazy getters: FirebaseFirestore.instance throws if Firebase isn't
+  // initialized yet, so don't touch it before the first real diary operation.
+  FirebaseFirestore get _firestore => FirebaseFirestore.instance;
+  FirebaseAuth get _auth => FirebaseAuth.instance;
 
   CollectionReference<Map<String, dynamic>>? get _collection {
     final uid = _auth.currentUser?.uid;
