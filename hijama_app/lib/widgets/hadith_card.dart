@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../services/hijri_calendar_service.dart';
 import '../services/localization_service.dart';
 import '../utils/app_theme.dart';
+import '../utils/status_palette.dart';
 
 class HadithCard extends StatelessWidget {
   const HadithCard({super.key, required this.hadith, this.compact = false});
@@ -51,28 +52,33 @@ class HadithCard extends StatelessWidget {
 // widgets/day_status_badge.dart
 class DayStatusBadge extends StatelessWidget {
   const DayStatusBadge({super.key, required this.status});
-  final dynamic status; // HijamaDayStatus
+  final HijamaDayStatus status;
 
   @override
   Widget build(BuildContext context) {
     final t = localization;
     final colors = Theme.of(context).extension<HijamaColors>()!;
+    final label = t.t(HijamaStatusStyle.labelKey(status));
 
-    Color bg; Color fg; String label;
-    switch (status.toString()) {
-      case 'HijamaDayStatus.sunnahDay':
-        bg = colors.sunnahBadge; fg = colors.sunnahBadgeText;
-        label = t.t('status_sunnah'); break;
-      case 'HijamaDayStatus.recommended':
-        bg = colors.sunnahBadge.withOpacity(0.7); fg = colors.sunnahBadgeText;
-        label = t.t('status_recommended'); break;
-      case 'HijamaDayStatus.avoid':
-        bg = colors.avoidBadge; fg = colors.avoidBadgeText;
-        label = t.t('status_avoid'); break;
-      default:
+    // Auf das Enum schalten, nicht auf dessen toString(): die früheren
+    // String-Fälle ("HijamaDayStatus.sunnahDay") existieren nicht mehr, wodurch
+    // ein perfekter Sunnah-Tag als "erlaubt" ausgewiesen wurde.
+    Color bg; Color fg;
+    switch (status) {
+      case HijamaDayStatus.perfectSunnah:
+        bg = colors.sunnahBadge; fg = colors.sunnahBadgeText; break;
+      case HijamaDayStatus.sunnahDateWeekendOverride:
+        bg = colors.sunnahBadge; fg = colors.sunnahBadgeText; break;
+      case HijamaDayStatus.sunnahDateWednesdayWarning:
+        bg = colors.gold.withOpacity(0.22); fg = colors.gold; break;
+      case HijamaDayStatus.recommended:
+        bg = colors.sunnahBadge.withOpacity(0.7); fg = colors.sunnahBadgeText; break;
+      case HijamaDayStatus.avoid:
+        bg = colors.avoidBadge; fg = colors.avoidBadgeText; break;
+      case HijamaDayStatus.allowed:
         bg = Theme.of(context).colorScheme.surfaceVariant;
         fg = Theme.of(context).colorScheme.onSurfaceVariant;
-        label = t.t('status_allowed');
+        break;
     }
 
     return Container(

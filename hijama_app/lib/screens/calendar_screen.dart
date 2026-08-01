@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hijri/hijri_calendar.dart';
 import '../services/hijri_calendar_service.dart';
 import '../services/localization_service.dart';
+import '../utils/status_palette.dart';
 
 class CalendarScreen extends StatefulWidget {
   const CalendarScreen({super.key});
@@ -49,23 +50,6 @@ class _CalendarScreenState extends State<CalendarScreen> {
       }
       _loadDays();
     });
-  }
-
-  Color _bgColor(HijamaDayStatus status) {
-    switch (status) {
-      case HijamaDayStatus.perfectSunnah:
-        return const Color(0xFF1A4A2E);
-      case HijamaDayStatus.sunnahDateWeekendOverride:
-        return const Color(0xFF5DCAA5);
-      case HijamaDayStatus.sunnahDateWednesdayWarning:
-        return const Color(0xFFC4922A);
-      case HijamaDayStatus.recommended:
-        return const Color(0xFF2D7A4A);
-      case HijamaDayStatus.avoid:
-        return const Color(0xFF993C1D);
-      case HijamaDayStatus.allowed:
-        return const Color(0xFF888780);
-    }
   }
 
   @override
@@ -143,7 +127,6 @@ class _CalendarScreenState extends State<CalendarScreen> {
                 days: _days,
                 onSelect: (d) => setState(() => _selected = d),
                 selected: _selected,
-                bgColor: _bgColor,
               ),
             ),
           ),
@@ -154,18 +137,30 @@ class _CalendarScreenState extends State<CalendarScreen> {
               spacing: 12,
               runSpacing: 6,
               children: [
-                _LegendItem(color: const Color(0xFF1A4A2E), label: t.t('calendar_legend_perfect')),
-                _LegendItem(color: const Color(0xFF5DCAA5), label: t.t('calendar_legend_sunnah_override')),
-                _LegendItem(color: const Color(0xFFC4922A), label: t.t('calendar_legend_sunnah_warning')),
-                _LegendItem(color: const Color(0xFF2D7A4A), label: t.t('calendar_legend_recommended')),
-                _LegendItem(color: const Color(0xFF993C1D), label: t.t('calendar_legend_avoid')),
-                _LegendItem(color: const Color(0xFF888780), label: t.t('calendar_legend_allowed')),
+                // Reihenfolge = Priorität: bester Tag zuerst, zu meidender zuletzt.
+                _LegendItem(
+                    status: HijamaDayStatus.perfectSunnah,
+                    label: t.t('calendar_legend_perfect')),
+                _LegendItem(
+                    status: HijamaDayStatus.sunnahDateWeekendOverride,
+                    label: t.t('calendar_legend_sunnah_override')),
+                _LegendItem(
+                    status: HijamaDayStatus.recommended,
+                    label: t.t('calendar_legend_recommended')),
+                _LegendItem(
+                    status: HijamaDayStatus.sunnahDateWednesdayWarning,
+                    label: t.t('calendar_legend_sunnah_warning')),
+                _LegendItem(
+                    status: HijamaDayStatus.allowed,
+                    label: t.t('calendar_legend_allowed')),
+                _LegendItem(
+                    status: HijamaDayStatus.avoid,
+                    label: t.t('calendar_legend_avoid')),
               ],
             ),
           ),
           // Detail panel for selected day
-          if (_selected != null)
-            _DayDetail(day: _selected!, bgColor: _bgColor(_selected!.status)),
+          if (_selected != null) _DayDetail(day: _selected!),
           const SizedBox(height: 8),
         ],
       ),
@@ -178,13 +173,11 @@ class _CalendarGrid extends StatelessWidget {
     required this.days,
     required this.onSelect,
     required this.selected,
-    required this.bgColor,
   });
 
   final List<HijamaDayInfo> days;
   final ValueChanged<HijamaDayInfo> onSelect;
   final HijamaDayInfo? selected;
-  final Color Function(HijamaDayStatus) bgColor;
 
   @override
   Widget build(BuildContext context) {
@@ -209,7 +202,7 @@ class _CalendarGrid extends StatelessWidget {
           return const SizedBox();
         }
         final day = days[dayIndex];
-        final color = bgColor(day.status);
+        final style = HijamaStatusStyle.of(day.status);
         final isToday = day.gregorianDate.year == DateTime.now().year &&
             day.gregorianDate.month == DateTime.now().month &&
             day.gregorianDate.day == DateTime.now().day;
@@ -219,13 +212,25 @@ class _CalendarGrid extends StatelessWidget {
           onTap: () => onSelect(day),
           child: Container(
             decoration: BoxDecoration(
-              color: color.withOpacity(isSelected ? 1.0 : 0.18),
+              // Deckkraft je Status statt pauschal 0.18 — sonst wirkt der
+              // beste Tag blasser als ein bloß empfohlener.
+              color: isSelected ? style.color : style.fill,
               borderRadius: BorderRadius.circular(5),
+              // "Heute" ist ein neutraler Cursor und darf nicht wie ein
+              // Status aussehen; Sunnah-Daten tragen ihre eigene Kontur.
               border: isToday
-                  ? Border.all(color: const Color(0xFF2D7A4A), width: 1.5)
+                  ? Border.all(
+                      color: Theme.of(ctx)
+                          .colorScheme
+                          .onSurface
+                          .withOpacity(0.75),
+                      width: 1.5)
                   : isSelected
-                      ? Border.all(color: color, width: 1.5)
-                      : null,
+                      ? Border.all(color: style.color, width: 1.5)
+                      : style.outlined
+                          ? Border.all(
+                              color: style.color.withOpacity(0.75), width: 1)
+                          : null,
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -261,21 +266,21 @@ class _CalendarGrid extends StatelessWidget {
 }
 
 class _DayDetail extends StatelessWidget {
-  const _DayDetail({required this.day, required this.bgColor});
+  const _DayDetail({required this.day});
   final HijamaDayInfo day;
-  final Color bgColor;
 
   @override
   Widget build(BuildContext context) {
     final t = localization;
     final statusKey = day.status.name;
+    final style = HijamaStatusStyle.of(day.status);
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(0.12),
+        color: style.fill,
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: bgColor.withOpacity(0.4)),
+        border: Border.all(color: style.color.withOpacity(0.4)),
       ),
       child: Row(
         children: [
@@ -283,7 +288,7 @@ class _DayDetail extends StatelessWidget {
             width: 10,
             height: 10,
             decoration: BoxDecoration(
-              color: bgColor,
+              color: style.color,
               borderRadius: BorderRadius.circular(3),
             ),
           ),
@@ -313,26 +318,37 @@ class _DayDetail extends StatelessWidget {
 }
 
 class _LegendItem extends StatelessWidget {
-  const _LegendItem({required this.color, required this.label});
-  final Color color;
+  const _LegendItem({required this.status, required this.label});
+  final HijamaDayStatus status;
   final String label;
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Container(
-          width: 10,
-          height: 10,
-          decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(3),
+    final style = HijamaStatusStyle.of(status);
+    return ConstrainedBox(
+      // Die Beschriftungen nennen jetzt Empfehlung *und* Grund und sind
+      // dadurch länger — ohne Deckel läuft die Zeile auf schmalen Geräten über.
+      constraints: BoxConstraints(
+        maxWidth: MediaQuery.of(context).size.width - 48,
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: 10,
+            height: 10,
+            decoration: BoxDecoration(
+              // Gleiche Füllung wie eine Kalenderzelle. Die Kontur hält das
+              // 10px-Kästchen auch bei niedriger Deckkraft sichtbar.
+              color: style.fill,
+              borderRadius: BorderRadius.circular(3),
+              border: Border.all(color: style.color.withOpacity(0.9)),
+            ),
           ),
-        ),
-        const SizedBox(width: 4),
-        Text(label, style: const TextStyle(fontSize: 10)),
-      ],
+          const SizedBox(width: 4),
+          Flexible(child: Text(label, style: const TextStyle(fontSize: 10))),
+        ],
+      ),
     );
   }
 }
